@@ -78,7 +78,7 @@ class XBMCNamespace(object):
     return hook
 
 # Dynamic namespace class injection
-namespaces = ["VideoLibrary", "AudioLibrary", "Application", "Player", "Input", "System", "Playlist", "Addons", "AudioLibrary", "Files", "GUI" , "JSONRPC", "PVR", "xbmc"]
+namespaces = ["VideoLibrary", "Settings", "Favourites", "AudioLibrary", "Application", "Player", "Input", "System", "Playlist", "Addons", "AudioLibrary", "Files", "GUI" , "JSONRPC", "PVR", "xbmc"]
 for cl in namespaces:
   s = """class %s(XBMCNamespace):
   \"\"\"XBMC %s namespace. \"\"\"
